@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4DD559E32CA98945000BD433 /* code_historyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD559E22CA98945000BD433 /* code_historyApp.swift */; };
-		4DD559E52CA98945000BD433 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD559E42CA98945000BD433 /* ContentView.swift */; };
 		4DD559E72CA98946000BD433 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD559E62CA98946000BD433 /* Assets.xcassets */; };
 		4DD559EA2CA98946000BD433 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD559E92CA98946000BD433 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,10 +15,14 @@
 /* Begin PBXFileReference section */
 		4DD559DF2CA98945000BD433 /* code history.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "code history.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DD559E22CA98945000BD433 /* code_historyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = code_historyApp.swift; sourceTree = "<group>"; };
-		4DD559E42CA98945000BD433 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4DD559E62CA98946000BD433 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DD559E92CA98946000BD433 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		4DB4F5A82CCD71670088808D /* Model */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Model; sourceTree = "<group>"; };
+		4DB4F5A92CCD71770088808D /* View */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = View; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4DD559DC2CA98945000BD433 /* Frameworks */ = {
@@ -51,10 +54,11 @@
 		4DD559E12CA98945000BD433 /* code history */ = {
 			isa = PBXGroup;
 			children = (
-				4DD559E22CA98945000BD433 /* code_historyApp.swift */,
-				4DD559E42CA98945000BD433 /* ContentView.swift */,
-				4DD559E62CA98946000BD433 /* Assets.xcassets */,
+				4DB4F5A92CCD71770088808D /* View */,
+				4DB4F5A82CCD71670088808D /* Model */,
 				4DD559E82CA98946000BD433 /* Preview Content */,
+				4DD559E22CA98945000BD433 /* code_historyApp.swift */,
+				4DD559E62CA98946000BD433 /* Assets.xcassets */,
 			);
 			path = "code history";
 			sourceTree = "<group>";
@@ -81,6 +85,10 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				4DB4F5A82CCD71670088808D /* Model */,
+				4DB4F5A92CCD71770088808D /* View */,
 			);
 			name = "code history";
 			productName = "code history";
@@ -137,7 +145,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DD559E52CA98945000BD433 /* ContentView.swift in Sources */,
 				4DD559E32CA98945000BD433 /* code_historyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,7 +294,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.ric.code-history";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -315,7 +322,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.ric.code-history";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
